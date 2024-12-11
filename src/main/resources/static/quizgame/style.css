@@ -1,0 +1,117 @@
+/* General Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+/* Show the container */
+.container.hidden {
+    display: none;
+}
+
+.container:not(.hidden) {
+    display: block;
+}
+
+/* Timer Display */
+#timer-container {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+/* Question Text */
+#question {
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Options Container */
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Option Button Styling */
+.option-button {
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+/* Option Button Hover */
+.option-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.02); /* Slight enlargement */
+}
+
+/* Selected Option */
+.option-button.selected {
+    background-color: #28a745; /* Green for selected */
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Disabled Option (For inactive state) */
+.option-button:disabled {
+    background-color: #ccc; /* Gray for disabled */
+    cursor: not-allowed;
+}
+
+/* Next Question Button */
+#next-question {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #6c757d; /* Gray background */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+/* Next Button Hover */
+#next-question:hover {
+    background-color: #5a6268; /* Darker gray */
+}
+
+/* Score Container */
+#score-container h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#score-container #final-score {
+    font-size: 18px;
+    text-align: center;
+    color: #007bff;
+}
